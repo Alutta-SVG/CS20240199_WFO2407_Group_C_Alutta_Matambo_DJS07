@@ -6,7 +6,7 @@ export default function Meme() {
             <form className = "form">
                 <div>
                     <input 
-                    type="text"
+                     type="text"
                     placeholder="Shut up"
                     className="form--input">
                     </input>
@@ -18,7 +18,7 @@ export default function Meme() {
                     </input>
                 </div>
                 <button
-                className="form--button"
+                className="form--button" 
                 >
                     Get a new meme image 
                 </button>
