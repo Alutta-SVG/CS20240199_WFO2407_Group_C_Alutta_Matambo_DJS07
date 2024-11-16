@@ -31,10 +31,13 @@ export default function Meme() {
             ...prevMeme,
             [name]: value
         }))
-    }
-    
+      }
     return (
         <main>
+          {/*Meme generator*/}
+    <header className="header">
+      <h1>Meme Generator</h1>
+      </header>
             <div className="form">
                 <input 
                     type="text"
