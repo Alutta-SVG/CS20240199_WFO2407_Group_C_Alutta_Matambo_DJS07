@@ -70,7 +70,7 @@ main {
 
 .meme--text {
   position: absolute;
-  width: 80%;
+  width: 50%;
   text-align: center;
   left: 50%;
   transform: translateX(-50%);
@@ -95,8 +95,10 @@ main {
 
 .bottom {
   bottom: 0;
+  top: 10px;
 }
 
 .top {
   top: 0;
+  bottom: 10px;
 }
