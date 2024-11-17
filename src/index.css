@@ -8,12 +8,10 @@
 .header {
   display: flex;
   align-items: center;
-  justify-content: center;
-  background-color: #a626d3;
+  height: 65px;
+  background: #a626d3;;
   color: white;
-  padding: 20px 40px;
-  font-size: 1rem;
-  font-weight: bold;
+  padding: 20px;
 }
 
 .header--logo {
