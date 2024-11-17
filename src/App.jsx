@@ -1,4 +1,4 @@
-import React from "react"
+import React from "react";
 import './index.css';
 
 export default function Meme() {
@@ -8,13 +8,13 @@ export default function Meme() {
         randomImage: "http://i.imgflip.com/1bij.jpg" 
     })
     const [allMemes, setAllMemes] = React.useState([])
-    
+
     React.useEffect(() => {
         fetch("https://api.imgflip.com/get_memes")
             .then(res => res.json())
             .then(data => setAllMemes(data.data.memes))
     }, [])
-    
+
     function getMemeImage() {
         const randomNumber = Math.floor(Math.random() * allMemes.length)
         const url = allMemes[randomNumber].url
@@ -24,20 +24,22 @@ export default function Meme() {
         }))
         
     }
-    
+
     function handleChange(event) {
         const {name, value} = event.target
         setMeme(prevMeme => ({
             ...prevMeme,
             [name]: value
         }))
-      }
+    }
+
     return (
         <main>
-          {/*Meme generator*/}
-    <header className="header">
-      <h1>Meme Generator</h1>
-      </header>
+            {/* Meme generator */}
+            <header className="header">
+                <img src="/vite.svg" alt="Vite Logo" className="header--logo" />
+                <h1>Meme Generator</h1>
+            </header>
             <div className="form">
                 <input 
                     type="text"

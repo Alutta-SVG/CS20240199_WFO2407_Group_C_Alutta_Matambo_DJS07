@@ -4,14 +4,22 @@
   padding: 0;
 }
 
-/* Header styles */
+
 .header {
-  text-align: center;
-  background-color: #a626d3; /* Change to your preferred color */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #a626d3;
   color: white;
-  padding: 10px 0;
+  padding: 20px 40px;
   font-size: 1rem;
   font-weight: bold;
+}
+
+.header--logo {
+  width: 40px;
+  height: auto;
+  margin-right: 15px;
 }
 
 body {
